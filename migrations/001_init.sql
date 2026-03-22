@@ -1,0 +1,68 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT NOT NULL UNIQUE,
+  display_name TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS pets (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL UNIQUE,
+  name TEXT NOT NULL,
+  species TEXT NOT NULL DEFAULT 'cat',
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS tasks (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL,
+  title TEXT NOT NULL,
+  task_type TEXT NOT NULL CHECK(task_type IN ('main', 'side')),
+  reward_value INTEGER NOT NULL DEFAULT 10,
+  completed INTEGER NOT NULL DEFAULT 0 CHECK(completed IN (0, 1)),
+  due_date TEXT NOT NULL,
+  completed_at TEXT,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_tasks_user_due_date ON tasks(user_id, due_date);
+
+CREATE TABLE IF NOT EXISTS daily_summary (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL,
+  summary_date TEXT NOT NULL,
+  food_earned INTEGER NOT NULL DEFAULT 0,
+  coin_earned INTEGER NOT NULL DEFAULT 0,
+  completed_main INTEGER NOT NULL DEFAULT 0,
+  completed_side INTEGER NOT NULL DEFAULT 0,
+  total_tasks INTEGER NOT NULL DEFAULT 0,
+  completion_rate REAL NOT NULL DEFAULT 0,
+  mood TEXT NOT NULL DEFAULT 'angry' CHECK(mood IN ('happy', 'calm', 'angry')),
+  pet_status TEXT NOT NULL DEFAULT 'hungry' CHECK(pet_status IN ('hungry', 'normal')),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE(user_id, summary_date),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS shop_items (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL UNIQUE,
+  description TEXT NOT NULL,
+  price INTEGER NOT NULL,
+  image_emoji TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS inventory (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL,
+  shop_item_id INTEGER NOT NULL,
+  purchased_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE(user_id, shop_item_id),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  FOREIGN KEY (shop_item_id) REFERENCES shop_items(id) ON DELETE CASCADE
+);
