@@ -7,7 +7,7 @@ import type { SessionUser, UserRole } from "@/lib/types";
 
 const SESSION_COOKIE = "pet_user";
 const PASSWORD_MIN_LENGTH = 8;
-const SESSION_MAX_AGE = 60 * 60 * 24 * 7; // 7 days in seconds
+const SESSION_MAX_AGE_SECONDS = 60 * 60 * 24 * 7; // 7 days
 
 function getSessionSecret(): string {
   const secret = process.env.SESSION_SECRET;
@@ -164,12 +164,12 @@ export function verifyPassword(password: string, passwordHash: string | null | u
 }
 
 export function setSessionCookie(response: NextResponseLike, username: string) {
-  const token = jwt.sign({ username }, getSessionSecret(), { expiresIn: SESSION_MAX_AGE });
+  const token = jwt.sign({ username }, getSessionSecret(), { expiresIn: SESSION_MAX_AGE_SECONDS });
   response.cookies.set(SESSION_COOKIE, token, {
     httpOnly: true,
     sameSite: "lax",
     path: "/",
-    maxAge: SESSION_MAX_AGE,
+    maxAge: SESSION_MAX_AGE_SECONDS,
   });
 }
 
