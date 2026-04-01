@@ -1,11 +1,21 @@
 import crypto from "crypto";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import jwt from "jsonwebtoken";
 import { db } from "@/lib/db";
 import type { SessionUser, UserRole } from "@/lib/types";
 
 const SESSION_COOKIE = "pet_user";
 const PASSWORD_MIN_LENGTH = 8;
+const SESSION_MAX_AGE = 60 * 60 * 24 * 7; // 7 days in seconds
+
+function getSessionSecret(): string {
+  const secret = process.env.SESSION_SECRET;
+  if (!secret) {
+    throw new Error("SESSION_SECRET environment variable is not set");
+  }
+  return secret;
+}
 
 type UserRecord = {
   id: number;
@@ -25,13 +35,22 @@ type UserAuthRecord = UserRecord & {
 
 export async function getSessionUsername(): Promise<SessionUser | null> {
   const cookieStore = await cookies();
-  const value = cookieStore.get(SESSION_COOKIE)?.value;
+  const token = cookieStore.get(SESSION_COOKIE)?.value;
 
-  if (!value || typeof value !== "string" || !/^[a-zA-Z0-9_-]{3,32}$/.test(value)) {
+  if (!token || typeof token !== "string") {
     return null;
   }
 
-  return value;
+  try {
+    const payload = jwt.verify(token, getSessionSecret()) as { username: string };
+    const username = payload.username;
+    if (!username || typeof username !== "string" || !/^[a-zA-Z0-9_-]{3,32}$/.test(username)) {
+      return null;
+    }
+    return username;
+  } catch {
+    return null;
+  }
 }
 
 export async function requireSessionUsername() {
@@ -145,11 +164,12 @@ export function verifyPassword(password: string, passwordHash: string | null | u
 }
 
 export function setSessionCookie(response: NextResponseLike, username: string) {
-  response.cookies.set(SESSION_COOKIE, username, {
+  const token = jwt.sign({ username }, getSessionSecret(), { expiresIn: SESSION_MAX_AGE });
+  response.cookies.set(SESSION_COOKIE, token, {
     httpOnly: true,
     sameSite: "lax",
     path: "/",
-    maxAge: 60 * 60 * 24 * 7,
+    maxAge: SESSION_MAX_AGE,
   });
 }
 
