@@ -1,5 +1,7 @@
 # Pet Asset Workflow v1
 
+> 本文檔為早期素材工作流筆記。完整的素材生產規格已整合至 [Asset / Character Pipeline Spec](./asset-pipeline-spec.md)。
+
 這份流程是給目前的 MVP 使用，目標是先把兩隻已選定角色穩定做出第一輪可用素材，不急著一次做完整素材庫。
 
 ## 目標
