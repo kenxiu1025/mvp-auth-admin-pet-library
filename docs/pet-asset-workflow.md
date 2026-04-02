@@ -157,11 +157,7 @@ public/pet/tabby-cat/angry.png
 
 ## Fallback 規則
 
-系統目前的取圖策略：
-
-1. 先找該角色對應狀態圖
-2. 若不存在，退回該角色的 `calm.png`
-3. 若仍不存在，再退回 `cat-default`
+> 系統取圖策略定義於 [Product PRD §8](./product-prd.md#8-寵物系統需求產品層)。簡言之：先找狀態圖 → 退回 `calm.png` → 退回 `cat-default`。
 
 所以你可以先只補：
 

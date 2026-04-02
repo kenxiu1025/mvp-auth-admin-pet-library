@@ -270,7 +270,7 @@
 
 - 可新增更多角色
 - 可新增更多狀態
-- 可新增 LoRA 訓練與量產流程
+- 素材生產側的擴展計畫（如 LoRA 訓練與量產流程）見 [Asset Pipeline Spec](./asset-pipeline-spec.md)
 
 ## 13. 部署策略
 
