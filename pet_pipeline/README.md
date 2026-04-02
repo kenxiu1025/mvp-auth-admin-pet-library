@@ -2,6 +2,8 @@
 
 This is the local unattended asset pipeline for the pet-task project.
 
+> For the full asset production specification (character definitions, state classification, naming conventions, acceptance criteria), see [docs/asset-pipeline-spec.md](../docs/asset-pipeline-spec.md).
+
 ## Quick start
 
 1. Install Python deps:

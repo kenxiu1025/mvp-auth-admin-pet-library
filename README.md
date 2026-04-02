@@ -204,6 +204,8 @@ npm run dev
 
 `pet_pipeline/` 是獨立於主 Web 專案的本地素材工作區。
 
+> 完整的素材生產規格、角色設定、狀態分類、命名規則、一致性驗收標準請見 [docs/asset-pipeline-spec.md](./docs/asset-pipeline-spec.md)。
+
 ### 能力
 
 - 角色 / 狀態 YAML 配置
@@ -221,11 +223,11 @@ npm run dev
 
 ### 相關文檔
 
-- [pet_pipeline/README.md](/Users/264271999qq.com/Documents/New%20project/pet_pipeline/README.md)
-- [pet_pipeline/RUNBOOK.md](/Users/264271999qq.com/Documents/New%20project/pet_pipeline/RUNBOOK.md)
-- [pet_pipeline/docs/PIPELINE_OVERVIEW.md](/Users/264271999qq.com/Documents/New%20project/pet_pipeline/docs/PIPELINE_OVERVIEW.md)
-- [pet_pipeline/docs/LOCAL_ENV_SNAPSHOT.md](/Users/264271999qq.com/Documents/New%20project/pet_pipeline/docs/LOCAL_ENV_SNAPSHOT.md)
-- [pet_pipeline/docs/LOCAL_VL_QC_RUNBOOK.md](/Users/264271999qq.com/Documents/New%20project/pet_pipeline/docs/LOCAL_VL_QC_RUNBOOK.md)
+- [pet_pipeline/README.md](./pet_pipeline/README.md)
+- [pet_pipeline/RUNBOOK.md](./pet_pipeline/RUNBOOK.md)
+- [pet_pipeline/docs/PIPELINE_OVERVIEW.md](./pet_pipeline/docs/PIPELINE_OVERVIEW.md)
+- [pet_pipeline/docs/LOCAL_ENV_SNAPSHOT.md](./pet_pipeline/docs/LOCAL_ENV_SNAPSHOT.md)
+- [pet_pipeline/docs/LOCAL_VL_QC_RUNBOOK.md](./pet_pipeline/docs/LOCAL_VL_QC_RUNBOOK.md)
 
 ## 10. 目前寵物資產模型
 
@@ -250,10 +252,12 @@ npm run dev
 
 如果你想快速理解目前系統，建議按這個順序看：
 
-1. [README.md](/Users/264271999qq.com/Documents/New%20project/README.md)
-2. [docs/PRD_MVP.md](/Users/264271999qq.com/Documents/New%20project/docs/PRD_MVP.md)
-3. [pet_pipeline/README.md](/Users/264271999qq.com/Documents/New%20project/pet_pipeline/README.md)
-4. [pet_pipeline/docs/PIPELINE_OVERVIEW.md](/Users/264271999qq.com/Documents/New%20project/pet_pipeline/docs/PIPELINE_OVERVIEW.md)
+1. [README.md](./README.md)（本文件）
+2. [docs/product-prd.md](./docs/product-prd.md) — Product PRD（Web 產品需求）
+3. [docs/asset-pipeline-spec.md](./docs/asset-pipeline-spec.md) — Asset / Character Pipeline Spec（角色素材生產需求）
+4. [docs/PRD_MVP.md](./docs/PRD_MVP.md) — 原始 PRD 索引頁（說明拆分背景）
+5. [pet_pipeline/README.md](./pet_pipeline/README.md)
+6. [pet_pipeline/docs/PIPELINE_OVERVIEW.md](./pet_pipeline/docs/PIPELINE_OVERVIEW.md)
 
 ## 12. 已知待補項
 
