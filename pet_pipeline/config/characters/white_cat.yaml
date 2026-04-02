@@ -1,0 +1,44 @@
+character_id: white_cat
+display_name: White Cat
+species: cat
+style_tags:
+  - kawaii
+  - clean
+  - soft-light
+  - children-book
+  - sticker-friendly
+fixed_traits:
+  - white fold-ear kitten
+  - large sapphire blue eyes
+  - pink nose
+  - round face
+  - front-facing sitting pose
+  - tail curled on the left side
+forbidden_traits:
+  - striped fur
+  - upright sharp ears
+  - accessories
+  - open mouth unless state requires
+eye_color: sapphire_blue
+ear_type: fold_ear
+fur_pattern: solid_white
+body_shape: small_round_kitten
+default_pose: centered front-facing sitting pose with all paws visible
+reference_image_paths:
+  - pet_pipeline/assets/characters/white_cat/reference/white_cat_reference_main.png
+  - pet_pipeline/assets/characters/white_cat/reference/TODO_reference_main.png
+control_image_paths:
+  - pet_pipeline/assets/characters/white_cat/control/white_cat_pose_control.png
+  - pet_pipeline/assets/characters/white_cat/control/TODO_pose_control.png
+preferred_masks:
+  face: pet_pipeline/assets/characters/white_cat/masks/white_cat_face_mask.png
+  eyes: pet_pipeline/assets/characters/white_cat/masks/white_cat_eyes_mask.png
+  mouth: pet_pipeline/assets/characters/white_cat/masks/white_cat_mouth_mask.png
+default_positive_prompt_addon: keep the same white fold-ear kitten identity, stable eye color, stable head shape, stable tail curl
+default_negative_prompt_addon: no stripes, no accessories, no body rotation, no extra whiskers, no different breed features
+master_image_paths:
+  - pet_pipeline/assets/characters/white_cat/master/white_cat_master_default.png
+  - pet_pipeline/assets/characters/white_cat/master/TODO_master_default.png
+training:
+  trigger_token: whitecatpet
+  recommended_dataset_dir: pet_pipeline/assets/training/white_cat

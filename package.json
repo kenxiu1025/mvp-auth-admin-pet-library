@@ -10,7 +10,11 @@
     "test": "jest",
     "db:migrate": "node scripts/migrate.js",
     "db:seed": "node scripts/seed.js",
-    "db:reset": "node scripts/reset-db.js"
+    "db:reset": "node scripts/reset-db.js",
+    "assets:prepare": "node scripts/prepare-pet-asset-jobs.js",
+    "assets:status": "node scripts/prepare-pet-asset-jobs.js --status",
+    "assets:export-sd": "node scripts/export-sd-prompts.js",
+    "assets:import": "node scripts/import-generated-assets.js"
   },
   "dependencies": {
     "better-sqlite3": "^11.8.1",

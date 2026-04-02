@@ -1,0 +1,238 @@
+{
+  "generatedAt": "2026-04-01T02:46:07.360Z",
+  "summary": {
+    "total": 12,
+    "ready": 0,
+    "missing": 12
+  },
+  "jobs": [
+    {
+      "assetKey": "white-cat",
+      "assetName": "白貓",
+      "state": "calm",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_33_19 PM.png",
+      "outputPath": "public/pet/white-cat/calm.png",
+      "exists": false,
+      "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, white fluffy fold-ear kitten, huge sapphire blue eyes, round face, soft creamy white fur, sitting straight, tail curled to the left side, gentle dreamy mood, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, calm and peaceful expression, relaxed eyes, neutral mouth, soft gentle presence",
+      "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+      "sdDefaults": {
+        "mode": "img2img",
+        "denoiseStrength": 0.28,
+        "cfgScale": 6.5,
+        "steps": 28,
+        "sampler": "DPM++ 2M Karras",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "assetKey": "white-cat",
+      "assetName": "白貓",
+      "state": "happy",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_33_19 PM.png",
+      "outputPath": "public/pet/white-cat/happy.png",
+      "exists": false,
+      "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, white fluffy fold-ear kitten, huge sapphire blue eyes, round face, soft creamy white fur, sitting straight, tail curled to the left side, gentle dreamy mood, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, slightly brighter sparkling eyes, tiny happy smile, energized and pleased expression, still elegant and cute",
+      "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+      "sdDefaults": {
+        "mode": "img2img",
+        "denoiseStrength": 0.28,
+        "cfgScale": 6.5,
+        "steps": 28,
+        "sampler": "DPM++ 2M Karras",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "assetKey": "white-cat",
+      "assetName": "白貓",
+      "state": "hungry",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_33_19 PM.png",
+      "outputPath": "public/pet/white-cat/hungry.png",
+      "exists": false,
+      "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, white fluffy fold-ear kitten, huge sapphire blue eyes, round face, soft creamy white fur, sitting straight, tail curled to the left side, gentle dreamy mood, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, slightly pleading eyes, a little needy and expectant expression, subtle hungry feeling, still the same kitten",
+      "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+      "sdDefaults": {
+        "mode": "img2img",
+        "denoiseStrength": 0.28,
+        "cfgScale": 6.5,
+        "steps": 28,
+        "sampler": "DPM++ 2M Karras",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "assetKey": "white-cat",
+      "assetName": "白貓",
+      "state": "angry",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_33_19 PM.png",
+      "outputPath": "public/pet/white-cat/angry.png",
+      "exists": false,
+      "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, white fluffy fold-ear kitten, huge sapphire blue eyes, round face, soft creamy white fur, sitting straight, tail curled to the left side, gentle dreamy mood, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, mild annoyed expression, slightly tense brows, tiny pout, cute displeased feeling rather than aggressive",
+      "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+      "sdDefaults": {
+        "mode": "img2img",
+        "denoiseStrength": 0.28,
+        "cfgScale": 6.5,
+        "steps": 28,
+        "sampler": "DPM++ 2M Karras",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "assetKey": "white-cat",
+      "assetName": "白貓",
+      "state": "sleepy",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_33_19 PM.png",
+      "outputPath": "public/pet/white-cat/sleepy.png",
+      "exists": false,
+      "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, white fluffy fold-ear kitten, huge sapphire blue eyes, round face, soft creamy white fur, sitting straight, tail curled to the left side, gentle dreamy mood, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, sleepy half-closed eyes, soft yawn-like mood, relaxed drowsy feeling",
+      "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+      "sdDefaults": {
+        "mode": "img2img",
+        "denoiseStrength": 0.28,
+        "cfgScale": 6.5,
+        "steps": 28,
+        "sampler": "DPM++ 2M Karras",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "assetKey": "white-cat",
+      "assetName": "白貓",
+      "state": "excited",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_33_19 PM.png",
+      "outputPath": "public/pet/white-cat/excited.png",
+      "exists": false,
+      "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, white fluffy fold-ear kitten, huge sapphire blue eyes, round face, soft creamy white fur, sitting straight, tail curled to the left side, gentle dreamy mood, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, very lively eyes, joyful energetic expression, slightly more lifted posture, excited but still same pose",
+      "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+      "sdDefaults": {
+        "mode": "img2img",
+        "denoiseStrength": 0.28,
+        "cfgScale": 6.5,
+        "steps": 28,
+        "sampler": "DPM++ 2M Karras",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "assetKey": "tabby-cat",
+      "assetName": "虎斑貓",
+      "state": "calm",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_32_58 PM.png",
+      "outputPath": "public/pet/tabby-cat/calm.png",
+      "exists": false,
+      "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, silver tabby kitten, vivid green eyes, clear forehead stripes, soft gray and white fur, sitting straight, tail curled to the left side, sweet and neat appearance, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, calm and peaceful expression, relaxed eyes, neutral mouth, soft steady presence",
+      "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+      "sdDefaults": {
+        "mode": "img2img",
+        "denoiseStrength": 0.28,
+        "cfgScale": 6.5,
+        "steps": 28,
+        "sampler": "DPM++ 2M Karras",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "assetKey": "tabby-cat",
+      "assetName": "虎斑貓",
+      "state": "happy",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_32_58 PM.png",
+      "outputPath": "public/pet/tabby-cat/happy.png",
+      "exists": false,
+      "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, silver tabby kitten, vivid green eyes, clear forehead stripes, soft gray and white fur, sitting straight, tail curled to the left side, sweet and neat appearance, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, slightly brighter sparkling eyes, tiny happy smile, cheerful and pleased expression, same kitten identity",
+      "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+      "sdDefaults": {
+        "mode": "img2img",
+        "denoiseStrength": 0.28,
+        "cfgScale": 6.5,
+        "steps": 28,
+        "sampler": "DPM++ 2M Karras",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "assetKey": "tabby-cat",
+      "assetName": "虎斑貓",
+      "state": "hungry",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_32_58 PM.png",
+      "outputPath": "public/pet/tabby-cat/hungry.png",
+      "exists": false,
+      "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, silver tabby kitten, vivid green eyes, clear forehead stripes, soft gray and white fur, sitting straight, tail curled to the left side, sweet and neat appearance, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, slightly pleading eyes, subtle hungry and waiting expression, cute needy mood without changing pose",
+      "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+      "sdDefaults": {
+        "mode": "img2img",
+        "denoiseStrength": 0.28,
+        "cfgScale": 6.5,
+        "steps": 28,
+        "sampler": "DPM++ 2M Karras",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "assetKey": "tabby-cat",
+      "assetName": "虎斑貓",
+      "state": "angry",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_32_58 PM.png",
+      "outputPath": "public/pet/tabby-cat/angry.png",
+      "exists": false,
+      "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, silver tabby kitten, vivid green eyes, clear forehead stripes, soft gray and white fur, sitting straight, tail curled to the left side, sweet and neat appearance, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, mild annoyed expression, slightly tense brows, tiny pout, cute grumpy feeling rather than fierce",
+      "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+      "sdDefaults": {
+        "mode": "img2img",
+        "denoiseStrength": 0.28,
+        "cfgScale": 6.5,
+        "steps": 28,
+        "sampler": "DPM++ 2M Karras",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "assetKey": "tabby-cat",
+      "assetName": "虎斑貓",
+      "state": "sleepy",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_32_58 PM.png",
+      "outputPath": "public/pet/tabby-cat/sleepy.png",
+      "exists": false,
+      "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, silver tabby kitten, vivid green eyes, clear forehead stripes, soft gray and white fur, sitting straight, tail curled to the left side, sweet and neat appearance, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, sleepy half-closed eyes, drowsy and soft relaxed mood",
+      "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+      "sdDefaults": {
+        "mode": "img2img",
+        "denoiseStrength": 0.28,
+        "cfgScale": 6.5,
+        "steps": 28,
+        "sampler": "DPM++ 2M Karras",
+        "width": 768,
+        "height": 1024
+      }
+    },
+    {
+      "assetKey": "tabby-cat",
+      "assetName": "虎斑貓",
+      "state": "excited",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_32_58 PM.png",
+      "outputPath": "public/pet/tabby-cat/excited.png",
+      "exists": false,
+      "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, silver tabby kitten, vivid green eyes, clear forehead stripes, soft gray and white fur, sitting straight, tail curled to the left side, sweet and neat appearance, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, very lively eyes, delighted energized expression, same pose and same tabby markings",
+      "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+      "sdDefaults": {
+        "mode": "img2img",
+        "denoiseStrength": 0.28,
+        "cfgScale": 6.5,
+        "steps": 28,
+        "sampler": "DPM++ 2M Karras",
+        "width": 768,
+        "height": 1024
+      }
+    }
+  ]
+}

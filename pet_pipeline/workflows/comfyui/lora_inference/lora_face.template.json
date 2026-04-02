@@ -1,0 +1,15 @@
+{
+  "template_type": "pet_pipeline_workflow",
+  "engine": "comfyui",
+  "builder": "lora_img2img",
+  "description": "LoRA-based inference with optional follow-up face inpaint.",
+  "requires": [
+    "checkpoint",
+    "lora_name"
+  ],
+  "todo": [
+    "Place trained LoRA files under your configured ComfyUI lora directory.",
+    "Update the profile or per-job metadata with the exact lora_name before running."
+  ]
+}
+

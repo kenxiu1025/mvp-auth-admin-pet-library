@@ -1,0 +1,9 @@
+{
+  "generatedAt": "2026-04-01T02:50:10.179Z",
+  "source": "data/pet-asset-jobs.json",
+  "totalJobs": 12,
+  "assets": [
+    "white-cat",
+    "tabby-cat"
+  ]
+}

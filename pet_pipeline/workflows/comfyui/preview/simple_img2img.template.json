@@ -1,0 +1,11 @@
+{
+  "template_type": "pet_pipeline_workflow",
+  "engine": "comfyui",
+  "builder": "simple_img2img",
+  "description": "Directly runnable preview workflow using built-in CheckpointLoaderSimple + LoadImage + KSampler + SaveImage.",
+  "requires": [
+    "checkpoint"
+  ],
+  "todo": []
+}
+

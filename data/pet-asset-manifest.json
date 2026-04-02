@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "outputRoot": "public/pet",
+  "requiredStates": ["calm", "happy", "hungry", "angry"],
+  "recommendedStates": ["sleepy", "excited"],
+  "assets": [
+    {
+      "key": "white-cat",
+      "name": "白貓",
+      "species": "cat",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_33_19 PM.png",
+      "seedAssignment": ["childA"],
+      "styleNotes": [
+        "正面坐姿",
+        "白淺背景",
+        "毛髮柔軟蓬鬆",
+        "藍色大眼",
+        "耳朵略摺",
+        "尾巴捲在左側"
+      ]
+    },
+    {
+      "key": "tabby-cat",
+      "name": "虎斑貓",
+      "species": "cat",
+      "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_32_58 PM.png",
+      "seedAssignment": ["childB"],
+      "styleNotes": [
+        "正面坐姿",
+        "白淺背景",
+        "銀灰虎斑花紋",
+        "綠色大眼",
+        "臉部花紋清楚",
+        "尾巴左側彎曲"
+      ]
+    }
+  ]
+}

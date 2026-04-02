@@ -5,3 +5,9 @@ data/*.db-shm
 data/*.db-wal
 .DS_Store
 .env
+__pycache__/
+*.pyc
+.venv-pet-pipeline/
+data/generated-assets/
+pet_pipeline/output/
+pet_pipeline/queue/*.jsonl

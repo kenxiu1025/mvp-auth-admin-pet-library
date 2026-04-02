@@ -1,0 +1,19 @@
+{
+  "assetKey": "tabby-cat",
+  "assetName": "虎斑貓",
+  "state": "calm",
+  "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_32_58 PM.png",
+  "outputPath": "public/pet/tabby-cat/calm.png",
+  "exists": false,
+  "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, silver tabby kitten, vivid green eyes, clear forehead stripes, soft gray and white fur, sitting straight, tail curled to the left side, sweet and neat appearance, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, calm and peaceful expression, relaxed eyes, neutral mouth, soft steady presence",
+  "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+  "sdDefaults": {
+    "mode": "img2img",
+    "denoiseStrength": 0.28,
+    "cfgScale": 6.5,
+    "steps": 28,
+    "sampler": "DPM++ 2M Karras",
+    "width": 768,
+    "height": 1024
+  }
+}

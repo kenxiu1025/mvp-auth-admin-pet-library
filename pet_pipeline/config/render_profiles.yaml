@@ -1,0 +1,104 @@
+defaults:
+  version_prefix: v
+  output_naming: "{character}_{state}_{stage}_v{version}.png"
+  queue_dir: pet_pipeline/queue
+  output_dir: pet_pipeline/output
+  reports_dir: pet_pipeline/output/reports
+  logs_dir: pet_pipeline/output/reports/logs
+  llm:
+    provider: ollama
+    model: qwen3:4b
+    enabled: false
+    timeout_seconds: 45
+  comfyui:
+    base_url_env: COMFYUI_BASE_URL
+    output_subdir: pet_pipeline
+    poll_interval_seconds: 2
+    timeout_seconds: 1800
+    nodes:
+      checkpoint_loader: CheckpointLoaderSimple
+      clip_text_encode: CLIPTextEncode
+      image_loader: LoadImage
+      image_mask_loader: LoadImageMask
+      image_scale: ImageScale
+      vae_encode: VAEEncode
+      vae_encode_for_inpaint: VAEEncodeForInpaint
+      inpaint_conditioning: InpaintModelConditioning
+      sampler: KSampler
+      vae_decode: VAEDecode
+      save_image: SaveImage
+      controlnet_loader: ControlNetLoader
+      controlnet_apply: ControlNetApplyAdvanced
+      clip_vision_loader: CLIPVisionLoader
+  assets_root: pet_pipeline/assets
+profiles:
+  preview:
+    description: Quick img2img profile for parameter tuning.
+    workflow_template: pet_pipeline/workflows/comfyui/preview/simple_img2img.template.json
+    builder: simple_img2img
+    stage: raw
+    variants: 2
+    cfg_scale: 6.5
+    steps: 28
+    sampler: dpmpp_2m
+    scheduler: karras
+    checkpoint: animagine-xl-3.1.safetensors
+    width: 768
+    height: 1024
+    denoise_strength: 0.3
+  production:
+    description: Formal body render with ControlNet and IP-Adapter hooks.
+    workflow_template: pet_pipeline/workflows/comfyui/production/control_ipadapter.template.json
+    builder: control_ipadapter_img2img
+    stage: raw
+    variants: 4
+    cfg_scale: 6.0
+    steps: 32
+    sampler: dpmpp_2m
+    scheduler: karras
+    checkpoint: animagine-xl-3.1.safetensors
+    width: 768
+    height: 1024
+    denoise_strength: 0.34
+    controlnet:
+      enabled: true
+      model_name: xinsir-controlnet-openpose-sdxl-1.0.safetensors
+      strength: 0.72
+      start_percent: 0.0
+      end_percent: 0.85
+    ipadapter:
+      enabled: true
+      model_name: ip-adapter-plus_sdxl_vit-h.safetensors
+      clip_vision_name: CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
+      weight: 0.7
+  inpaint:
+    description: Face-only inpaint for state expression changes.
+    workflow_template: pet_pipeline/workflows/comfyui/inpaint/face_inpaint.template.json
+    builder: face_inpaint
+    stage: review
+    variants: 3
+    cfg_scale: 5.5
+    steps: 24
+    sampler: dpmpp_2m
+    scheduler: karras
+    checkpoint: animagine-xl-3.1.safetensors
+    width: 768
+    height: 1024
+    denoise_strength: 0.42
+    inpaint:
+      mask_blur: 8
+      fill_mode: neutral
+      inpaint_model_name: animagine-xl-3.1.safetensors
+  lora_inference:
+    description: Preview rendering with per-character LoRA loaded.
+    workflow_template: pet_pipeline/workflows/comfyui/lora_inference/lora_face.template.json
+    builder: lora_img2img
+    stage: raw
+    variants: 4
+    cfg_scale: 6.0
+    steps: 30
+    sampler: dpmpp_2m
+    scheduler: karras
+    width: 768
+    height: 1024
+    denoise_strength: 0.28

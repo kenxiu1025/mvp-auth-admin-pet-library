@@ -1,0 +1,46 @@
+character_id: tabby_cat
+display_name: Tabby Cat
+species: cat
+style_tags:
+  - kawaii
+  - clean
+  - soft-light
+  - children-book
+  - sticker-friendly
+fixed_traits:
+  - silver gray american shorthair tabby kitten
+  - large emerald green eyes
+  - pink nose
+  - round face
+  - front-facing sitting pose
+  - stable forehead stripes
+  - tail curled on the left side
+forbidden_traits:
+  - blue eyes
+  - folded ears
+  - missing stripes
+  - accessories
+  - open mouth unless state requires
+eye_color: emerald_green
+ear_type: upright_round
+fur_pattern: silver_gray_tabby
+body_shape: small_round_kitten
+default_pose: centered front-facing sitting pose with all paws visible
+reference_image_paths:
+  - pet_pipeline/assets/characters/tabby_cat/reference/tabby_cat_reference_main.png
+  - pet_pipeline/assets/characters/tabby_cat/reference/TODO_reference_main.png
+control_image_paths:
+  - pet_pipeline/assets/characters/tabby_cat/control/tabby_cat_pose_control.png
+  - pet_pipeline/assets/characters/tabby_cat/control/TODO_pose_control.png
+preferred_masks:
+  face: pet_pipeline/assets/characters/tabby_cat/masks/tabby_cat_face_mask.png
+  eyes: pet_pipeline/assets/characters/tabby_cat/masks/tabby_cat_eyes_mask.png
+  mouth: pet_pipeline/assets/characters/tabby_cat/masks/tabby_cat_mouth_mask.png
+default_positive_prompt_addon: keep the same silver tabby identity, stable stripe positions, stable eye color, stable pose
+default_negative_prompt_addon: no fold ears, no white solid coat, no accessories, no stripe drift, no body rotation
+master_image_paths:
+  - pet_pipeline/assets/characters/tabby_cat/master/tabby_cat_master_default.png
+  - pet_pipeline/assets/characters/tabby_cat/master/TODO_master_default.png
+training:
+  trigger_token: tabbycatpet
+  recommended_dataset_dir: pet_pipeline/assets/training/tabby_cat

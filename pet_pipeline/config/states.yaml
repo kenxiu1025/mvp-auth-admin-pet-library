@@ -1,0 +1,56 @@
+states:
+  - state_id: default
+    emotion_goal: neutral mascot baseline
+    facial_focus: neutral eyes and mouth
+    prompt_addon: default mascot expression, stable baseline face, gentle neutral presence
+    negative_addon: exaggerated emotion, dramatic pose
+    recommended_denoise_range: [0.18, 0.28]
+    recommended_mask_type: none
+    recommended_pipeline: preview
+    notes: Use this as the anchor render for downstream comparison.
+  - state_id: calm
+    emotion_goal: soft peaceful and settled
+    facial_focus: relaxed eyes and tiny neutral mouth
+    prompt_addon: calm and peaceful expression, relaxed eyes, soft gentle presence
+    negative_addon: sadness, grin, anger
+    recommended_denoise_range: [0.22, 0.32]
+    recommended_mask_type: face
+    recommended_pipeline: preview
+    notes: Good baseline state for final product if default is not shipped separately.
+  - state_id: happy
+    emotion_goal: clearly happy without identity drift
+    facial_focus: sparkling eyes, small smile
+    prompt_addon: clear happy emotion, visible small smiling mouth, lifted cheerful expression, brighter sparkling eyes
+    negative_addon: crying, shocked open mouth, fierce eyebrows
+    recommended_denoise_range: [0.35, 0.48]
+    recommended_mask_type: face
+    recommended_pipeline: face_inpaint
+    notes: Prefer inpaint on face after stable body render.
+  - state_id: hungry
+    emotion_goal: cute needy and expectant
+    facial_focus: pleading eyes, subtle mouth change
+    prompt_addon: pleading eyes, slightly needy waiting expression, subtle hungry feeling
+    negative_addon: aggressive anger, body twist, oversized tears
+    recommended_denoise_range: [0.38, 0.5]
+    recommended_mask_type: face
+    recommended_pipeline: face_inpaint
+    notes: Keep body and fur identical to default; only face should shift.
+  - state_id: angry
+    emotion_goal: cute displeased, not hostile
+    facial_focus: annoyed eyes, slight pout
+    prompt_addon: mild annoyed expression, slightly tense brows, tiny pout, cute grumpy feeling rather than fierce
+    negative_addon: monster face, sharp fangs, intense aggression
+    recommended_denoise_range: [0.4, 0.52]
+    recommended_mask_type: face
+    recommended_pipeline: face_inpaint
+    notes: Needs the most care to avoid species drift.
+  - state_id: sleepy
+    emotion_goal: drowsy and soft
+    facial_focus: half-closed eyes, relaxed mouth
+    prompt_addon: sleepy half-closed eyes, drowsy and soft relaxed mood
+    negative_addon: collapsed pose, fully closed eyes unless sleeping variant, drool
+    recommended_denoise_range: [0.3, 0.42]
+    recommended_mask_type: eyes
+    recommended_pipeline: face_inpaint
+    notes: Usually best with an eyes-only mask first, then optional face pass.
+

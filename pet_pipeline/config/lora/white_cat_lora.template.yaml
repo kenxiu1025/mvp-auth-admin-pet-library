@@ -1,0 +1,26 @@
+character_id: white_cat
+trigger_token: whitecatpet
+base_model: TODO_sdxl_or_pony_base.safetensors
+network:
+  type: lora
+  rank: 16
+  alpha: 16
+optimizer:
+  name: adamw8bit
+  learning_rate: 0.0001
+  text_encoder_learning_rate: 0.00005
+training:
+  resolution: "768,1024"
+  batch_size: 1
+  epochs: 8
+  save_every_n_epochs: 1
+  mixed_precision: bf16
+dataset:
+  image_dir: pet_pipeline/assets/training/white_cat/processed
+  caption_dir: pet_pipeline/assets/training/white_cat/captions
+  repeats: 8
+notes:
+  - TODO replace base_model with your actual checkpoint name
+  - TODO review captions before training
+  - Keep expression variety moderate; preserve identity first
+

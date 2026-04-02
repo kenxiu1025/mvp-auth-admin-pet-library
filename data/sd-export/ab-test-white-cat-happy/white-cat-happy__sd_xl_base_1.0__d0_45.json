@@ -1,0 +1,20 @@
+{
+  "assetKey": "white-cat",
+  "assetName": "白貓",
+  "state": "happy",
+  "baseImage": "/Users/264271999qq.com/Downloads/ChatGPT Image Mar 22, 2026, 05_33_19 PM.png",
+  "outputPath": "public/pet/white-cat/happy.png",
+  "exists": false,
+  "prompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette, white fluffy fold-ear kitten, huge sapphire blue eyes, round face, soft creamy white fur, sitting straight, tail curled to the left side, gentle dreamy mood, keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style, slightly brighter sparkling eyes, tiny happy smile, energized and pleased expression, still elegant and cute, clear happy emotion, visible small smiling mouth, lifted cheerful expression, brighter sparkling eyes, slightly more animated face",
+  "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+  "sdDefaults": {
+    "mode": "img2img",
+    "denoiseStrength": 0.45,
+    "cfgScale": 6.5,
+    "steps": 28,
+    "sampler": "DPM++ 2M Karras",
+    "width": 768,
+    "height": 1024
+  },
+  "variantLabel": "sd_xl_base_1.0__d0_45"
+}

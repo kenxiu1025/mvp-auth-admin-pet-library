@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "globalStylePrompt": "cute kawaii kitten illustration, soft children-book rendering, centered composition, full body sitting pose, clean pale background, consistent proportions, polished fur details, bright eyes, sticker-friendly silhouette",
+  "globalConstraintPrompt": "keep the same cat identity, same pose, same camera angle, same tail position, same body proportions, same fur pattern, same eye color, same background style",
+  "negativePrompt": "extra limbs, extra tail, cropped ears, missing paws, duplicated whiskers, distorted anatomy, open mouth unless specified, dramatic background, accessories, collar, text, watermark, logo, photorealistic, lowres, blurry, oversaturated, deformed face",
+  "sdDefaults": {
+    "mode": "img2img",
+    "denoiseStrength": 0.28,
+    "cfgScale": 6.5,
+    "steps": 28,
+    "sampler": "DPM++ 2M Karras",
+    "width": 768,
+    "height": 1024
+  },
+  "assets": {
+    "white-cat": {
+      "identityPrompt": "white fluffy fold-ear kitten, huge sapphire blue eyes, round face, soft creamy white fur, sitting straight, tail curled to the left side, gentle dreamy mood",
+      "states": {
+        "calm": "calm and peaceful expression, relaxed eyes, neutral mouth, soft gentle presence",
+        "happy": "slightly brighter sparkling eyes, tiny happy smile, energized and pleased expression, still elegant and cute",
+        "hungry": "slightly pleading eyes, a little needy and expectant expression, subtle hungry feeling, still the same kitten",
+        "angry": "mild annoyed expression, slightly tense brows, tiny pout, cute displeased feeling rather than aggressive",
+        "sleepy": "sleepy half-closed eyes, soft yawn-like mood, relaxed drowsy feeling",
+        "excited": "very lively eyes, joyful energetic expression, slightly more lifted posture, excited but still same pose"
+      }
+    },
+    "tabby-cat": {
+      "identityPrompt": "silver tabby kitten, vivid green eyes, clear forehead stripes, soft gray and white fur, sitting straight, tail curled to the left side, sweet and neat appearance",
+      "states": {
+        "calm": "calm and peaceful expression, relaxed eyes, neutral mouth, soft steady presence",
+        "happy": "slightly brighter sparkling eyes, tiny happy smile, cheerful and pleased expression, same kitten identity",
+        "hungry": "slightly pleading eyes, subtle hungry and waiting expression, cute needy mood without changing pose",
+        "angry": "mild annoyed expression, slightly tense brows, tiny pout, cute grumpy feeling rather than fierce",
+        "sleepy": "sleepy half-closed eyes, drowsy and soft relaxed mood",
+        "excited": "very lively eyes, delighted energized expression, same pose and same tabby markings"
+      }
+    }
+  }
+}
